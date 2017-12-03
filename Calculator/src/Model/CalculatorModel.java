@@ -283,6 +283,7 @@ public class CalculatorModel
 		int minus;
 		int times;
 		int divide;
+		int mod;
 		double addition_result;
 		double subtraction_result;
 		double exp_result = 0;
@@ -290,6 +291,7 @@ public class CalculatorModel
 		double multi_result = 0;
 		double divide_result = 0;
 		double sqrt_result = 0;
+		double mod_result = 0;
 		String result = "Undefined";
 		equation_length = equation.length();
 		if (equation.contains("("))
@@ -385,11 +387,41 @@ public class CalculatorModel
 			if (left_side.isEmpty())
 				left_side = "0";
 			if (right_side.isEmpty())
-				right_side = "0";
+			{
+				result = "Syntax Error";
+				return result;
+			}
+			else if (right_side.equals("0"))
+			{
+				result = "Divide by Zero Error";
+				return result;
+			}
 			temp = Double.parseDouble(left_side);
-			multi_result = Double.parseDouble(right_side);
-			multi_result = temp / multi_result;
-			result = Double.toString(multi_result);
+			divide_result = Double.parseDouble(right_side);
+			divide_result = temp / divide_result;
+			result = Double.toString(divide_result);
+			return result;
+		}
+		
+		else if (equation.contains("%"))
+		{
+			mod = equation.indexOf("%");
+			left_side = equation.substring(0, mod);
+			right_side = equation.substring(mod+1, equation_length);
+			if (right_side.isEmpty())
+			{
+				result = "Syntax Error";
+				return result;
+			}
+			else if (right_side.equals("0"))
+			{
+				result = "Divide by Zero Error";
+				return result;
+			}
+			temp = Double.parseDouble(left_side);
+			mod_result = Double.parseDouble(right_side);
+			mod_result = temp%mod_result;
+			result = Double.toString(mod_result);
 			return result;
 		}
 		
