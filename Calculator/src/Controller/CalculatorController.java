@@ -77,6 +77,9 @@ public class CalculatorController implements Initializable
 	@FXML
 	private Button divide;
 	
+	@FXML
+	private Button clear;
+	
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
@@ -88,8 +91,8 @@ public class CalculatorController implements Initializable
 	{
 		try
 		{
-			String text = calculator.inputOne(display.getText());
-			display.setText(text);
+			display.setText(calculator.inputOne(display.getText()));
+			
 		}
 		catch (Exception exception)
 		{
@@ -318,6 +321,19 @@ public class CalculatorController implements Initializable
 		try
 		{
 			display.setText(calculator.results(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void clearPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText("");
+			display.setPromptText("Enter Value");
 		}
 		catch (Exception exception)
 		{

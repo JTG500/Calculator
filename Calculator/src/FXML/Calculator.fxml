@@ -112,7 +112,7 @@
             <DropShadow />
          </effect>
       </Button>
-      <Button fx:id="plus" layoutX="457.0" layoutY="158.0" mnemonicParsing="false" onAction="#plusPressed" prefHeight="58.0" prefWidth="73.0" text="+">
+      <Button fx:id="plus" layoutX="384.0" layoutY="158.0" mnemonicParsing="false" onAction="#plusPressed" prefHeight="58.0" prefWidth="73.0" text="+">
          <font>
             <Font size="20.0" />
          </font>
@@ -120,7 +120,7 @@
             <DropShadow />
          </effect>
       </Button>
-      <Button fx:id="minus" layoutX="457.0" layoutY="252.0" mnemonicParsing="false" onAction="#minusPressed" prefHeight="58.0" prefWidth="73.0" text="-">
+      <Button fx:id="minus" layoutX="384.0" layoutY="252.0" mnemonicParsing="false" onAction="#minusPressed" prefHeight="58.0" prefWidth="73.0" text="-">
          <font>
             <Font size="20.0" />
          </font>
@@ -128,7 +128,7 @@
             <DropShadow />
          </effect>
       </Button>
-      <Button fx:id="divide" layoutX="457.0" layoutY="342.0" mnemonicParsing="false" onAction="#dividePressed" prefHeight="58.0" prefWidth="73.0" text="/">
+      <Button fx:id="divide" layoutX="384.0" layoutY="342.0" mnemonicParsing="false" onAction="#dividePressed" prefHeight="58.0" prefWidth="73.0" text="/">
          <font>
             <Font size="20.0" />
          </font>
@@ -136,7 +136,7 @@
             <DropShadow />
          </effect>
       </Button>
-      <Button fx:id="times" layoutX="457.0" layoutY="437.0" mnemonicParsing="false" onAction="#timesPressed" prefHeight="58.0" prefWidth="73.0" text="*">
+      <Button fx:id="times" layoutX="384.0" layoutY="437.0" mnemonicParsing="false" onAction="#timesPressed" prefHeight="58.0" prefWidth="73.0" text="*">
          <font>
             <Font size="20.0" />
          </font>
@@ -144,7 +144,7 @@
             <DropShadow />
          </effect>
       </Button>
-      <Button fx:id="equal" layoutX="457.0" layoutY="527.0" mnemonicParsing="false" onAction="#equalPressed" prefHeight="58.0" prefWidth="73.0" text="=">
+      <Button fx:id="equal" layoutX="384.0" layoutY="527.0" mnemonicParsing="false" onAction="#equalPressed" prefHeight="58.0" prefWidth="73.0" text="=">
          <effect>
             <DropShadow />
          </effect>
@@ -175,6 +175,14 @@
          <font>
             <Font size="16.0" />
          </font>
+      </Button>
+      <Button fx:id="clear" layoutX="487.0" layoutY="155.0" mnemonicParsing="false" onAction="#clearPressed" prefHeight="431.0" prefWidth="82.0" text="CLEAR">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
       </Button>
    </children>
    <effect>
