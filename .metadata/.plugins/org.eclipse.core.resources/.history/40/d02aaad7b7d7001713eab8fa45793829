@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="display" alignment="CENTER_RIGHT" layoutX="58.0" layoutY="49.0" prefHeight="77.0" prefWidth="460.0" promptText="0" style="-fx-background-color: #FFFFFF;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Button fx:id="one" layoutX="44.0" layoutY="158.0" mnemonicParsing="false" onAction="#onePressed" prefHeight="58.0" prefWidth="73.0" text="1">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="two" layoutX="153.0" layoutY="158.0" mnemonicParsing="false" onAction="#twoPressed" prefHeight="58.0" prefWidth="73.0" text="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="three" layoutX="264.0" layoutY="158.0" mnemonicParsing="false" onAction="#threePressed" prefHeight="58.0" prefWidth="73.0" text="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="four" layoutX="44.0" layoutY="252.0" mnemonicParsing="false" onAction="#fourPressed" prefHeight="58.0" prefWidth="73.0" text="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="five" layoutX="153.0" layoutY="252.0" mnemonicParsing="false" onAction="#fivePressed" prefHeight="58.0" prefWidth="73.0" text="5">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="six" layoutX="264.0" layoutY="252.0" mnemonicParsing="false" onAction="#sixPressed" prefHeight="58.0" prefWidth="73.0" text="6">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="seven" layoutX="44.0" layoutY="342.0" mnemonicParsing="false" onAction="#sevenPressed" prefHeight="58.0" prefWidth="73.0" text="7">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="eight" layoutX="153.0" layoutY="342.0" mnemonicParsing="false" onAction="#eightPressed" prefHeight="58.0" prefWidth="73.0" text="8">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="nine" layoutX="264.0" layoutY="342.0" mnemonicParsing="false" onAction="#ninePressed" prefHeight="58.0" prefWidth="73.0" text="9">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="leftBracket" layoutX="44.0" layoutY="437.0" mnemonicParsing="false" onAction="#leftBracketPressed" prefHeight="58.0" prefWidth="73.0" text="(">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="zero" layoutX="153.0" layoutY="437.0" mnemonicParsing="false" onAction="#zeroPressed" prefHeight="58.0" prefWidth="73.0" text="0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="rightBracket" layoutX="264.0" layoutY="437.0" mnemonicParsing="false" onAction="#rightBracketPressed" prefHeight="58.0" prefWidth="73.0" text=")">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="plus" layoutX="457.0" layoutY="158.0" mnemonicParsing="false" onAction="#plusPressed" prefHeight="58.0" prefWidth="73.0" text="+">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="minus" layoutX="457.0" layoutY="252.0" mnemonicParsing="false" onAction="#minusPressed" prefHeight="58.0" prefWidth="73.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="slash" layoutX="457.0" layoutY="342.0" mnemonicParsing="false" onAction="#slashPressed" prefHeight="58.0" prefWidth="73.0" text="/">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="times" layoutX="457.0" layoutY="437.0" mnemonicParsing="false" onAction="#timesPressed" prefHeight="58.0" prefWidth="73.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="equal" layoutX="457.0" layoutY="527.0" mnemonicParsing="false" onAction="#equalPressed" prefHeight="58.0" prefWidth="73.0" text="=">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="mod" layoutX="264.0" layoutY="527.0" mnemonicParsing="false" onAction="#modPressed" prefHeight="58.0" prefWidth="73.0" text="MOD">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="exp" layoutX="153.0" layoutY="527.0" mnemonicParsing="false" onAction="#expPressed" prefHeight="58.0" prefWidth="73.0" text="^">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="sqrt" layoutX="44.0" layoutY="527.0" mnemonicParsing="false" onAction="#sqrtPressed" prefHeight="58.0" prefWidth="73.0" text="SQRT">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</Pane>

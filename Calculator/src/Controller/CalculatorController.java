@@ -1,0 +1,327 @@
+package Controller;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import Model.CalculatorModel;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+
+public class CalculatorController implements Initializable
+{
+	CalculatorModel calculator = new CalculatorModel();
+	
+	@FXML
+	private TextField display;
+	
+	@FXML
+	private Button one;
+	
+	@FXML
+	private Button two;
+	
+	@FXML
+	private Button three;
+	
+	@FXML
+	private Button four;
+	
+	@FXML
+	private Button five;
+	
+	@FXML
+	private Button six;
+	
+	@FXML
+	private Button seven;
+	
+	@FXML
+	private Button eight;
+	
+	@FXML
+	private Button nine;
+	
+	@FXML
+	private Button zero;
+	
+	@FXML
+	private Button mod;
+	
+	@FXML
+	private Button leftBracket;
+	
+	@FXML
+	private Button rightBracket;
+	
+	@FXML
+	private Button sqrt;
+	
+	@FXML
+	private Button exp;
+	
+	@FXML
+	private Button equal;
+	
+	@FXML
+	private Button minus;
+	
+	@FXML
+	private Button plus;
+	
+	@FXML
+	private Button times;
+	
+	@FXML
+	private Button divide;
+	
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) 
+	{
+			
+	}
+	
+	public void onePressed(ActionEvent event)
+	{
+		try
+		{
+			String text = calculator.inputOne(display.getText());
+			display.setText(text);
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void twoPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputTwo(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void threePressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputThree(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void fourPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputFour(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void fivePressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputFive(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void sixPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputSix(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void sevenPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputSeven(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void eightPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputEight(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void ninePressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputNine(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void zeroPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputZero(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void sqrtPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputSQRT(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void expPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputExp(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void leftBracketPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputLeftBracket(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void rightBracketPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputRightBracket(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void modPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputMod(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void dividePressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputDivide(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void timesPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputTimes(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void minusPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputMinus(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void plusPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.inputPlus(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+	
+	public void equalPressed(ActionEvent event)
+	{
+		try
+		{
+			display.setText(calculator.results(display.getText()));
+		}
+		catch (Exception exception)
+		{
+			exception.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,142 @@
+package Model;
+
+public class CalculatorModel 
+{
+	public String inputOne(String equation)
+	{
+		String number = "1";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputTwo(String equation)
+	{
+		String number = "2";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputThree(String equation)
+	{
+		String number = "3";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputFour(String equation)
+	{
+		String number = "4";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputFive(String equation)
+	{
+		String number = "5";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputSix(String equation)
+	{
+		String number = "6";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputSeven(String equation)
+	{
+		String number = "7";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputEight(String equation)
+	{
+		String number = "8";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputNine(String equation)
+	{
+		String number = "9";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputZero(String equation)
+	{
+		String number = "0";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputMod(String equation)
+	{
+		String number = "%";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputLeftBracket(String equation)
+	{
+		String number = "(";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputRightBracket(String equation)
+	{
+		String number = ")";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputSQRT(String equation)
+	{
+		String number = "sqrt(";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputExp(String equation)
+	{
+		String number = "^";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputMinus(String equation)
+	{
+		String number = "-";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputPlus(String equation)
+	{
+		String number = "+";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputTimes(String equation)
+	{
+		String number = "*";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String inputDivide(String equation)
+	{
+		String number = "/";
+		equation.concat(number);
+		return equation;
+	}
+	
+	public String results(String equation)
+	{
+		return equation;
+	}
+}

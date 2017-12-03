@@ -1,0 +1,33 @@
+package Application;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Main extends Application
+{
+	 
+	  public void start(Stage mainStage)
+	 	{	
+		 	try 
+		 	{
+		 		Parent root = FXMLLoader.load(Main.class.getResource("Calculator.fxml"));
+		 		Scene scene = new Scene(root);
+		 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		 		mainStage.setScene(scene);
+		 		mainStage.show();
+		 	} 
+		 	catch(Exception exception) 
+		 	{
+		 		exception.printStackTrace();
+		 	}
+		}
+		 		
+	 	
+	 public static void main(String[] args) 
+	    {
+		 	Application.launch(args);
+	    }
+}
